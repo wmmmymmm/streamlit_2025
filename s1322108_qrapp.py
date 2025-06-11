@@ -39,7 +39,7 @@ if st.button("QRコードを生成"):
         byte_im = buf.getvalue()
 
         #QRコード表示
-        st.image(byte_im, caption="生成されたQRコード", use_column_width=False)
+        st.image(byte_im, caption="生成されたQRコード", use_container_width=False)
 
         #ダウンロードボタン
         st.download_button(
